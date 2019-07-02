@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SISTEMA DE CADASTRO DE ESTRANGEIROS</title>
+</head>
+<body>
+    
+    Digite em qual pais você vive? <input type="text" id="txtn1">
+    <input type="button" value="Enviar" id="btn1">
+    <div id="res"></div>
+
+
+
+    <script>
+        var btn = document.querySelector('input#btn1');
+        var txt1 = document.querySelector('input#txtn1');
+        var res = document.querySelector('div#res');
+
+        btn.onclick = function(){
+            if(txt1.value != 'Brasil'){
+                res.innerHTML = `Você é Estrangeiro`;
+            }else{
+                res.innerHTML = `Você é Brasileiro`;
+            }
+        }
+    </script>
+</body>
+</html>
