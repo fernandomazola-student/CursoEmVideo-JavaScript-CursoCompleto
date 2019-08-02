@@ -15,18 +15,21 @@
     </header>
     <section>
         <div id="analise">
-            <p>Número (entre 1 e 100): <input type="number" id="numero"><input value="Adicionar" id="btn-adicionar" type="button"></p>
-            <p><select id="selectbox" size="10" name="flista">
+            <p>Número (entre 1 e 100): 
+            <input type="number" id="numero">
+            <input onclick="adicionar()" value="Adicionar" id="btn-adicionar" type="button">
+            </p>
+            <p>
+                <select id="selectbox" size="10" name="flista">
                 <option value="" disabled selected>Digite um valor acima</option>
-            </select></p>
-            <p><input type="button" id="btn-finalizar" value="Finalizar"></p>
+                </select>
+            </p>
+            <p>
+                <input onclick="finalizar()" type="button" id="btn-finalizar" value="Finalizar">
+            </p>
         </div>
         <div id="info">
-            <p id="totalnum"></p>
-            <p id="maiorvalor"></p>
-            <p id="menorvalor"></p>
-            <p id="soma"></p>
-            <p id="media"></p>
+
         </div>
         <script src="script.js"></script>
     </section>
